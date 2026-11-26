@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGM's Canteen Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍔 MGM's Canteen</h1>
+        <p>Order your favourite food before your break!</p>
+    </header>
+
+    <main>
+        <!-- Login -->
+        <section id="loginSection" class="panel">
+            <h2>Student Login</h2>
+
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input id="email" type="email" required
+                       placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" required
+                       placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </section>
+
+        <!-- Products -->
+        <section id="shopSection" hidden>
+            <div class="welcome">
+                <div>
+                    <h2>Our Menu</h2>
+                    <p id="welcomeMessage"></p>
+                </div>
+                <button id="logoutButton" class="secondary">Logout</button>
+            </div>
+
+            <p id="productMessage" class="message"></p>
+            <div id="products" class="products"></div>
+
+            <section class="panel cart">
+                <h2>Your Cart</h2>
+                <div id="cartItems">Your cart is empty.</div>
+                <h3 id="total">Total: ₹0.00</h3>
+                <button id="orderButton">Place Order</button>
+                <p id="orderMessage" class="message"></p>
+            </section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

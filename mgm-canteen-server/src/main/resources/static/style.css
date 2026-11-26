@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263238;
+}
+
+header {
+    background: #176b45;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px #00000010;
+}
+
+#loginSection {
+    max-width: 420px;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+button {
+    background: #176b45;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #105537;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#loginForm button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.secondary {
+    background: #596579;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.food-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.food-card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #176b45;
+    font-weight: bold;
+}
+
+.quantity {
+    width: 90px;
+    margin: 10px 0;
+}
+
+.cart {
+    margin-top: 25px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.message {
+    overflow-wrap: anywhere;
+}
+
+.success {
+    color: #137333;
+}
+
+.error {
+    color: #b42318;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    .welcome {
+        align-items: flex-start;
+    }
+
+    .cart-row {
+        align-items: flex-start;
+    }
+}

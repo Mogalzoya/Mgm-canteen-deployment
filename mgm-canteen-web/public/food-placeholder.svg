@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" rx="24" fill="#f1eee6"/>
+  <circle cx="200" cy="135" r="76" fill="#ffffff" stroke="#d8d1c2" stroke-width="8"/>
+  <circle cx="200" cy="135" r="55" fill="#f5d98b"/>
+  <path d="M165 139c18-32 50-36 72-4-15 30-48 39-72 4Z" fill="#7b9a58"/>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#6c6a60">Food image</text>
+</svg>
